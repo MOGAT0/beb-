@@ -1,0 +1,149 @@
+body{
+    font-family: Arial, sans-serif;
+    background: url() no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 80px 0;
+}
+.box{
+    padding: 10px;
+    background-clip: padding-box;
+    text-align: center;
+}
+.button{
+    font-size: 1em;
+    padding: 10PX;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3 ease-out;
+    background-color: rgba(220, 220, 220, 0.773);
+}
+.button:hover{
+    background: black;
+    color: white;
+    transition-duration: 0.5s;
+}
+.button2{
+    font-size: 1em;
+    color: rgb(17, 33, 175);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3 ease-out;
+}
+.button2:hover{
+    color: rgb(249, 249, 249);
+    transition-duration: 0.5s;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(112, 112, 112, 0.396);
+    transition: 0.4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+}
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+.popup{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgb(92, 92, 92);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popup h2{
+    margin-top: 0;
+    color: #ffffff;
+    font-family: tahoma, Arial, sans-serif;
+}
+.popup .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.popup .close:hover{
+    color: red;
+}
+.popup .content{
+    max-height: 30%;
+    overflow: auto;
+}
+
+*
+
+.overlay2{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(112, 112, 112, 0.396);
+    transition: 0.4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+}
+.overlay2:target{
+    visibility: visible;
+    opacity: 1;
+}
+.popupA{
+    margin: 70px auto;
+    padding: 20px;
+    background: rgb(92, 92, 92);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popupA h2{
+    margin-top: 0;
+    color: #ffffff;
+    font-family: tahoma, Arial, sans-serif;
+}
+.popupA .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.popupA .close:hover{
+    color: red;
+}
+.popupA .content{
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px)
+{
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
